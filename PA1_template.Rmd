@@ -23,7 +23,7 @@ data <- read.csv("./data/activity.csv")
 
 
 ## What is mean total number of steps taken per day?
-```{r cars}
+```{r }
 ## 1
 # transforming "date" column to date type
 data$date <- as.Date(data$date)
@@ -46,7 +46,7 @@ median(daily_steps$steps, na.rm = TRUE)
 
 
 ## What is the average daily activity pattern?
-```{r cars}
+```{r }
 ## 1
 # aggregating the data by steps and intervals
 avg_steps <- aggregate(steps~interval, data = data, FUN = mean, na.rm = TRUE)
@@ -62,7 +62,7 @@ avg_steps[which.max(avg_steps$steps),"interval"]
 
 
 ## Including Plots
-```{r cars}
+```{r }
 ## 1
 # x is the total number of rows and y is the number of rows without NAs
 x <- nrow(data)
@@ -108,7 +108,7 @@ median(new_daily_steps$steps, na.rm = TRUE)
 
 
 ## Including Plots
-```{r cars}
+```{r }
 
 ## 1
 

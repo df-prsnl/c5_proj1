@@ -86,7 +86,7 @@ avg_steps[which.max(avg_steps$steps),"interval"]
 ```
 
 
-## Including Plots
+## Imputing missing values
 
 ``` r
 ## 1
@@ -153,7 +153,7 @@ median(new_daily_steps$steps, na.rm = TRUE)
 ```
 
 
-## Including Plots
+## Are there differences in activity patterns between weekdays and weekends?
 
 ``` r
 ## 1
